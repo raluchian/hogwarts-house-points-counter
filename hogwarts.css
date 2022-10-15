@@ -1,0 +1,77 @@
+/* typografy */
+
+@font-face {
+    font-family: 'Harry Potter';
+    src: url("font/HarryPotter-ov4z.ttf");
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    font-family: 'Harry Potter';
+    font-size: 20px;
+    background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2019/12/great-hall-feature.jpeg");
+    background-size: cover;
+}
+
+h3,
+.points,
+.btn,
+p{
+    text-align: center;
+    color: #140701;
+    text-shadow: 0 0 10px #e0c67a;
+}
+
+h3,
+.points{
+    font-size: 40px;
+}
+
+p{
+    font-size: 25px;
+}
+
+#end-count,
+#start-count{
+    font-size: 20px;
+}
+
+/* layout */
+
+.container,
+.final-section,
+.winner {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 10px;
+    
+}
+
+
+.btn{
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #e0c67a;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #140701;
+    color: #e0c67a;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <header>
+    <title>Hogwarts House Points Counter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="hogwarts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+    </header>
+    <body>
+        <div class="container">
+            <div class="griffindor">
+                <h3>Griffindor</h3>
+                <p id="griffindor-points" class="points">0</p>
+                <div class="giving-points">
+                    <button class="btn" onclick="addGriff(5)">+5</button>
+                    <button class="btn" onclick="addGriff(10)">+10</button>
+                    <button class="btn" onclick="addGriff(20)">+20</button>
+                    <button class="btn" onclick="addGriff(50)">+50</button>
+                    <button class="btn" onclick="addGriff(100)">+100</button>
+                </div>
+                <div class="taking-points">
+                    <button class="btn" onclick="takeGriff(5)">-5</button>
+                    <button class="btn" onclick="takeGriff(10)">-10</button>
+                    <button class="btn" onclick="takeGriff(20)">-20</button>
+                    <button class="btn" onclick="takeGriff(50)">-50</button>
+                    <button class="btn" onclick="takeGriff(100)">-100</button>
+                </div>
+            </div>
+            <div class="slytherin">
+                <h3>Slytherin</h3>
+                <p id="slytherin-points" class="points">0</p>
+                <div class="giving-points">
+                    <button class="btn" onclick="addSlyth(5)">+5</button>
+                    <button class="btn" onclick="addSlyth(10)">+10</button>
+                    <button class="btn" onclick="addSlyth(20)">+20</button>
+                    <button class="btn" onclick="addSlyth(50)">+50</button>
+                    <button class="btn" onclick="addSlyth(100)">+100</button>
+                </div>
+                <div class="taking-points">
+                    <button class="btn" onclick="takeSlyth(5)">-5</button>
+                    <button class="btn" onclick="takeSlyth(10)">-10</button>
+                    <button class="btn" onclick="takeSlyth(20)">-20</button>
+                    <button class="btn" onclick="takeSlyth(50)">-50</button>
+                    <button class="btn" onclick="takeSlyth(100)">-100</button>
+                </div>
+            </div>
+            <div class="hufflepuff">
+                <h3>Hufflepuff</h3>
+                <p id="hufflepuff-points" class="points">0</p>
+                <div class="giving-points">
+                    <button class="btn" onclick="addHuff(5)">+5</button>
+                    <button class="btn" onclick="addHuff(10)">+10</button>
+                    <button class="btn" onclick="addHuff(20)">+20</button>
+                    <button class="btn" onclick="addHuff(50)">+50</button>
+                    <button class="btn" onclick="addHuff(100)">+100</button>
+                </div>
+                <div class="taking-points">
+                    <button class="btn" onclick="takeHuff(5)">-5</button>
+                    <button class="btn" onclick="takeHuff(10)">-10</button>
+                    <button class="btn" onclick="takeHuff(20)">-20</button>
+                    <button class="btn" onclick="takeHuff(50)">-50</button>
+                    <button class="btn" onclick="takeHuff(100)">-100</button>
+                </div>
+            </div>
+            <div class="ravenclaw">
+                <h3>Ravenclaw</h3>
+                <p id="ravenclaw-points" class="points">0</p>
+                <div class="giving-points">
+                    <button class="btn" onclick="addRav(5)">+5</button>
+                    <button class="btn" onclick="addRav(10)">+10</button>
+                    <button class="btn" onclick="addRav(20)">+20</button>
+                    <button class="btn" onclick="addRav(50)">+50</button>
+                    <button class="btn" onclick="addRav(100)">+100</button>
+                </div>
+                <div class="taking-points">
+                    <button class="btn" onclick="takeRav(5)">-5</button>
+                    <button class="btn" onclick="takeRav(10)">-10</button>
+                    <button class="btn" onclick="takeRav(20)">-20</button>
+                    <button class="btn" onclick="takeRav(50)">-50</button>
+                    <button class="btn" onclick="takeRav(100)">-100</button>
+                </div>
+            </div>
+        </div>
+        <div class="winner">
+            <p id="housecup-winner"></p>
+        </div>
+        <div class="final-section">
+        <div class="finish-points-count">
+            <button class="btn" id="end-count" onclick="endCounting()">End the school year</button>
+        </div>
+            <div class="start-points-count">
+                <button class="btn" id="start-count" onclick="startCounting()">Start a new school year</button>
+            </div>
+        </div>
+        
+        <script src="hogwarts.js"></script>
+    </body>
+</html>
